@@ -13367,18 +13367,18 @@
 		};
 		D3C187D0290FCF3D00FE1900 /* XCRemoteSwiftPackageReference "ComponentKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/horizontalsystems/ComponentKit.Swift";
+			repositoryURL = "https://github.com/hoanghiephui/ComponentKit.Swift";
 			requirement = {
-				kind = exactVersion;
-				version = 2.0.15;
+				branch = coindex;
+				kind = branch;
 			};
 		};
 		D3C187D3290FCF7D00FE1900 /* XCRemoteSwiftPackageReference "HUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/horizontalsystems/HUD.Swift";
+			repositoryURL = "https://github.com/hoanghiephui/HUD.Swift";
 			requirement = {
-				kind = exactVersion;
-				version = 2.0.0;
+				branch = coindex;
+				kind = branch;
 			};
 		};
 		D3C187D9290FCFBC00FE1900 /* XCRemoteSwiftPackageReference "SectionsTableView" */ = {
