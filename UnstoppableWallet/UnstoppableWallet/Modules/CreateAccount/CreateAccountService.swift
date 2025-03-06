@@ -18,7 +18,7 @@ class CreateAccountService {
         }
     }
 
-    private let passphraseEnabledRelay = BehaviorRelay<Bool>(value: true)
+    private let passphraseEnabledRelay = BehaviorRelay<Bool>(value: false)
 
     var name: String = ""
     var passphrase: String = ""

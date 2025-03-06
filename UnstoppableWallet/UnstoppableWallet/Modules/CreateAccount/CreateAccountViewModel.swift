@@ -17,10 +17,13 @@ class CreateAccountViewModel {
 
     init(service: CreateAccountService) {
         self.service = service
-        onTogglePassphrase(isOn: isPassphraseEnabled)
         subscribe(disposeBag, service.wordCountObservable) { [weak self] in self?.sync(wordCount: $0) }
 
         sync(wordCount: service.wordCount)
+    }
+    
+    func setPassphraseEnabled(_ isOn: Bool) {
+        onTogglePassphrase(isOn: isOn)
     }
 
     private func sync(wordCount: Mnemonic.WordCount) {

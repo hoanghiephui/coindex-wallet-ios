@@ -34,7 +34,7 @@ class CreateAccountSimpleViewController: KeyboardAwareViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewModel.setPassphraseEnabled(false)
         title = "create_wallet.title".localized
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "button.cancel".localized, style: .plain, target: self, action: #selector(onTapCancel))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "create_wallet.create".localized, style: .done, target: self, action: #selector(onTapCreate))

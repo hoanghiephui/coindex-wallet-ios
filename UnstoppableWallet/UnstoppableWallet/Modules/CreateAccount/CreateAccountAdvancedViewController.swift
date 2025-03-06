@@ -47,7 +47,7 @@ class CreateAccountAdvancedViewController: KeyboardAwareViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewModel.setPassphraseEnabled(true)
         title = "create_wallet.advanced_setup".localized
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "create_wallet.create".localized, style: .done, target: self, action: #selector(onTapCreate))
         navigationItem.largeTitleDisplayMode = .never
