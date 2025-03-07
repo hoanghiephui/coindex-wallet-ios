@@ -29,6 +29,7 @@
 "button.i_understand" = "이해합니다";
 "button.learn_more" = "자세히 보기";
 "button.unlock" = "잠금 해제";
+"button.select" = "Select";
 
 "alert" = "알림";
 "alert.copied" = "복사됨";
@@ -103,6 +104,7 @@
 "number.quadrillion" = "%@천조";
 
 "selector.any" = "어떤";
+"selector.none" = "없음";
 
 "face_id" = "페이스 ID";
 "touch_id" = "터치 ID";
@@ -409,6 +411,10 @@
 
 "blockchain_type.recommended" = " (평균)";
 
+// Address
+
+"address.title" = "주소 입력";
+
 // Send
 
 "send.title" = "전송 %@";
@@ -426,6 +432,7 @@
 "send.available_balance" = "사용 가능한 잔액";
 "send.max_button" = "최대";
 "send.next_button" = "다음";
+"send.check_button" = "Check";
 "send.error.invalid" = "무효";
 "send.error.invalid_blockchain" = "유효하지 않은 블록체인";
 "send.error.invalid_token" = "잘못된 토큰";
@@ -453,7 +460,7 @@
 "send.confirmation.you_receive" = "You Receive";
 "send.confirmation.transfer" = "전송";
 "send.confirmation.to" = "에게";
-"send.confirmation.from" = "From";
+"send.confirmation.from" = "로 부터";
 "send.confirmation.own" = "아군";
 "send.confirmation.contact_name" = "담당자 이름";
 "send.confirmation.domain" = "도메인";
@@ -470,7 +477,7 @@
 "send.confirmation.comment" = "Comment";
 "send.confirmation.action" = "Action";
 "send.confirmation.status" = "상태";
-"send.confirmation.status.failed" = "Failed";
+"send.confirmation.status.failed" = "실패";
 
 "send.confirmation.sync_failed" = "동기화 실패";
 "send.confirmation.invalid_data" = "유효하지 않은 데이터";
@@ -495,7 +502,7 @@
 "send.confirmation.method" = "메소드";
 "send.confirmation.replace_by_fee.disabled" = "비활성화됨";
 "send.amount_error.balance" = "잔고 부족";
-"send.address_error.own_address" = "TRX를 자신에게 전송할 수 없습니다";
+"send.address_error.own_address" = "Sending %@ to your own address is not allowed. Please enter a different recipient address.";
 "send.amount_error.maximum_amount" = "최대 %@ 금액";
 "send.amount_error.minimum_amount" = "최소 %@ 금액";
 "send.amount_error.min_required_balance" = "최소 %@ 만큼의 필요 잔여금";
@@ -525,12 +532,33 @@
 "approve.confirmation.spender" = "스펜더";
 
 "send.enter_amount" = "금액 입력";
-"send.enter_address" = "주소 입력";
-"send.invalid_address" = "잘못된 주소";
 "send.token_not_enabled" = "토큰 활성화되지 않음";
 "send.token_syncing" = "토큰 동기화 중";
 "send.token_not_synced" = "토큰 동기화되지 않음";
 "send.insufficient_balance" = "잔액 부족";
+"send.continue_anyway" = "계속 진행하기";
+
+"send.address.enter_address" = "주소 입력";
+"send.address.invalid_address" = "유효하지 않은 주소";
+"send.address.recent" = "최근";
+"send.address.contacts" = "연락처";
+"send.address.checking" = "확인 중";
+"send.address.check.clear" = "안전함";
+"send.address.check.detected" = "감지됨";
+"send.address.risky.title" = "위험한 주소!";
+"send.address.risky.description" = "고위험 주소로 자금을 보내려고 합니다. 진행하면 자금 손실이나 기타 보안 위험이 발생할 수 있습니다. 계속 진행하면 잠재적 위험을 수락하는 것입니다. 정말로 진행하시겠습니까?";
+"send.address.phishing_check" = "피싱 확인";
+"send.address.phishing.description" = "제공된 목적지 주소의 잠재적 피싱 위험을 분석합니다.\n\n안전함: 의심스러운 활동이 감지되지 않았습니다.\n\n감지됨: 누군가 잘못된 주소로 자금을 보내도록 속이려는 시도가 있는 것 같습니다. 주소가 정확하다고 확신하지 않는 한 진행하지 마세요. 먼저 소액 테스트 트랜잭션을 보내는 것을 고려해 보세요.";
+"send.address.phishing.caution.title" = "피싱 주소 감지됨!";
+"send.address.phishing.caution.description" = "입력한 주소가 사기성일 수 있습니다. 사기꾼들은 종종 처음과 마지막 문자를 변경합니다. 손실을 방지하기 위해 진행하기 전에 전체 주소를 주의 깊게 확인하세요.";
+"send.address.sanction_check" = "제재 확인";
+"send.address.sanction.description" = "수신자의 주소가 Chainalysis.com의 데이터를 사용하여 국제 제재 대상인지 확인합니다.\n\n안전함: 제재가 감지되지 않았습니다.\n\n감지됨: 잠재적 법적 위험. 이 주소와의 거래는 특정 관할권에서 제한되거나 불법일 수 있습니다.";
+"send.address.sanction.caution.title" = "제재 대상 주소!";
+"send.address.sanction.caution.description" = "입력한 주소가 제재 대상으로 표시되어 있습니다. 이 주소로의 거래는 손실이나 기타 위험을 초래할 수 있습니다. 진행하기 전에 수신자 정보를 확인하세요.";
+"send.address.blacklist_check" = "블랙리스트 확인";
+"send.address.blacklist.description" = "목적지 주소가 공식 또는 비공식 블랙리스트에 등록되어 있는지 확인합니다.\n\n안전함: 블랙리스트 표시가 없습니다.\n\n감지됨: 해당 주소는 블랙리스트에 등록되어 있으며 법적 또는 보안 위험과 관련되어 있을 수 있습니다. 주의하여 진행하세요. 많은 암호화폐 거래소는 블랙리스트에 등록된 주소와 상호 작용한 지갑에서 자금을 입금하거나 출금하는 사용자를 제한합니다. 이 점을 염두에 두세요.";
+"send.address.blacklist.caution.title" = "블랙리스트 등록 주소!";
+"send.address.blacklist.caution.description" = "입력한 주소가 블랙리스트에 등록된 것으로 표시되어 있습니다. 이 주소로의 거래는 손실이나 기타 위험을 초래할 수 있습니다. 진행하기 전에 수신자 정보를 확인하세요.";
 
 // Donate
 
@@ -554,7 +582,7 @@
 "swap.estimated" = "예상";
 "swap.balance" = "잔액";
 "swap.you_get" = "얻기";
-"swap.token" = "선택";
+"swap.token" = "Select";
 "swap.advanced_settings" = "스왑 설정";
 "swap.proceed_button" = "다음";
 "swap.approve.title" = "스왑 승인";
@@ -580,7 +608,7 @@
 "swap.maximum_short" = "(최대)";
 
 "swap.rate_not_available" = "가격이 제공되지 않습니다";
-"swap.select" = "선택";
+"swap.select" = "Select";
 "swap.quoting" = "견적";
 "swap.select_token_in" = "토큰 인 선택";
 "swap.select_token_out" = "토큰 아웃 선택";
@@ -630,11 +658,13 @@
 "swap.advanced_settings.recipient.footer" = "교환 작업 후, 금액은 지정된 주소로 이체됩니다.";
 "swap.advanced_settings.deadline_minute" = "최소 %@";
 "swap.advanced_settings.recipient_address" = "수취인 주소";
+"swap.advanced_settings.recipient_address.to" = "에게";
+"swap.advanced_settings.add_recipient_address" = "Add Recipient Address";
 "swap.advanced_settings.warning.unusual_slippage" = "거래가 프론트런 당할 수 있습니다";
 "swap.advanced_settings.service_fee_description" = "플랫폼에서 스왑 작업에 대한 서비스 수수료는 일반적으로 0.3% 또는 0.6%입니다.";
 "swap.advanced_settings.error.lower_slippage" = "귀하의 거래가 실패할 것 같습니다.";
 "swap.advanced_settings.error.higher_slippage" = "슬리피지 허용 오차는 %@%%를 초과할 수 없습니다.";
-"swap.advanced_settings.error.invalid_address" = "잘못된 주소";
+"swap.advanced_settings.error.invalid_address" = "Invalid Address";
 "swap.advanced_settings.error.invalid_slippage" = "올바르지 않은 슬립";
 "swap.advanced_settings.error.invalid_deadline" = "올바르지 않은 마감 시간";
 
@@ -796,7 +826,7 @@
 "top_platform.total_cap" = "시가 총액";
 
 
-"market.search.recent" = "최근의";
+"market.search.recent" = "Recent";
 "market.search.popular" = "인기있는";
 
 "market_discovery.title" = "탐색";
@@ -832,6 +862,7 @@
 "market.advanced_search.choose_set" = "설정 선택";
 "market.advanced_search.market_cap" = "총 시가 총액";
 "market.advanced_search.volume" = "거래량";
+"market.advanced_search.categories" = "부문";
 
 "market.advanced_search.listed_on_top_exchanges" = "주요 거래소에 상장됨";
 "market.advanced_search.good_cex_volume" = "좋은 중앙화된 거래소 (CEX) 거래량";
@@ -848,6 +879,7 @@
 "market.advanced_search.outperformed_btc" = "BTC를 능가했습니다";
 "market.advanced_search.outperformed_eth" = "ETH를 능가했습니다";
 "market.advanced_search.outperformed_bnb" = "BNB를 능가했습니다";
+"market.advanced_search.price_close_to" = "Price Close To";
 "market.advanced_search.price_close_to_ath" = "최고가에 가까운 가격";
 "market.advanced_search.price_close_to_atl" = "Price Close to ATL";
 
@@ -877,6 +909,16 @@
 "market.advanced_search.more_10_b" = ">100억";
 "market.advanced_search.more_50_b" = "> 500억";
 "market.advanced_search.more_500_b" = "> 5000억";
+
+"market.advanced_search.top.m_cap" = "M.Cap";
+"market.advanced_search.top.more_1_b" = "> $1B";
+"market.advanced_search.top.more_500_m" = "> $500M";
+"market.advanced_search.top.more_250_m" = "> $250M";
+"market.advanced_search.top.more_100_m" = "> $100M";
+"market.advanced_search.top.more_25_m" = "> $25M";
+"market.advanced_search.top.more_10_m" = "> $10M";
+"market.advanced_search.top.more_5_m" = "> $5M";
+"market.advanced_search.top.more_1_m" = "> $1M";
 
 "market.advanced_search.day" = "1 일";
 "market.advanced_search.week" = "1일주";
@@ -1220,7 +1262,7 @@
 "transactions.pending" = "보류 중";
 "transactions.processing" = "처리 중";
 "transactions.completed" = "완료됨";
-"transactions.failed" = "Failed";
+"transactions.failed" = "실패";
 
 "transactions.receive" = "수령";
 "transactions.send" = "전송됨";
@@ -1262,8 +1304,8 @@
 "tx_info.title_approval" = "스왑 승인";
 "tx_info.status.pending" = "보류 중";
 "tx_info.status.completed" = "완료됨";
-"tx_info.status.failed" = "Failed";
-"tx_info.from_hash" = "From";
+"tx_info.status.failed" = "실패";
+"tx_info.from_hash" = "로 부터";
 "tx_info.transaction_id" = "거래 ID";
 "tx_info.to_hash" = "에게";
 "tx_info.spender" = "스펜더";
@@ -1312,7 +1354,6 @@
 "settings.tell_friends" = "친구에게 추천하기";
 "settings.contact_us" = "문의하기";
 "settings.social_networks.label" = "Be Unstoppable";
-"settings.social_networks.footer" = "독점 비디오로 암호화폐를 배우고 정복하세요. 비공식적으로 우리를 알아가세요. 우리가 작업하는 것들을 가장 먼저 보실 수 있습니다.";
 "settings.get_your_tokens" = "Get UWT Tokens";
 
 // Settings -> Base Currency
@@ -1544,10 +1585,8 @@
 
 "settings.privacy" = "개인정보";
 "settings.privacy.description" = "%@는 코인 잔액이나 주소와 같은 개인 정보를 노출하는 개인 데이터를 수집하지 않습니다. UI 사용 통계를 수집하긴 하지만, 이는 사용자 기반 및 앱 사용 트렌드를 이해하기 위한 것입니다. 원하신다면 비활성화할 수 있습니다.";
-"settings.privacy.statement.data_usage" = "지갑은 사용자에 대한 데이터를 수집하지 않습니다.";
-"settings.privacy.statement.data_storage" = "사용자 계정이나 사용자 데이터를 저장하는 데이터베이스가 없습니다.";
-"settings.privacy.statement.user_account" = "허용된 경우, 지갑은 앱 사용 습관을 Unstoppable 팀과 공유할 것입니다. 이는 사용자가 어떤 기능을 사용하고 있는지 (또는 사용하지 않는지) 이해하기 위한 것입니다. 개인 정보 보호를 중시하는 앱이지만, 우리의 노력을 평가할 방법이 필요합니다. 이를 통해 만든 기능이 사용되고 있는지 여부를 알 수 없기 때문입니다.";
 "settings.privacy.allow" = "UI 데이터 공유";
+"settings.privacy.allow.description" = "This setting allows you to disable UI/UX analytics and ensure complete confidentiality.";
 
 // Settings -> Appearance
 
@@ -1577,6 +1616,25 @@
 "appearance.balance_value.fiat_coin" = "피아트/코인";
 
 "appearance.app_icon" = "앱 아이콘";
+
+// Settings -> Subsription
+
+"subscription.premium.label" = "프리미엄";
+"subscription.title" = "구독";
+"subscription.get" = "프리미엄 구독하기";
+"subscription.restore" = "구매 복원";
+"subscription.type" = "구독 유형";
+"subscription.one-time" = "일회성";
+"subscription.price" = "금액";
+"subscription.next_payment" = "다음 결제일";
+"subscription.purchase_time" = "시작일";
+"subscription.status" = "상태";
+"subscription.manage" = "구독 관리";
+
+// Settings -> Support
+
+"settings.vip_support.description" = "프리미엄 사용자와 Unstoppable Wallet 팀이 협력하는 VIP 그룹에 독점 액세스하세요. 직접적인 지원을 받고, 향후 업데이트에 대해 논의하며, 지갑의 발전 방향을 함께 만들어 나가세요.";
+"settings.vip_support.start_chat" = "VIP 그룹 참여하기";
 
 // Settings -> Contacts
 
@@ -1731,13 +1789,10 @@
 "add_token.blockchain" = "Blockchain";
 "add_token.already_added" = "이 토큰은 이미 코인 매니저 리스트에 있습니다.";
 "add_token.invalid_contract_address" = "잘못된 계약 주소";
-"add_token.invalid_bep2_symbol" = "잘못된 BEP2 기호";
 "add_token.invalid_ton_address" = "잘못된 [톤] 주소입니다";
 "add_token.contract_address_not_found" = "%@ 블록체인에서 계약 주소를 찾을 수 없습니다.";
 "add_token.jetton_master_not_found" = "Jetton Master를 %@ 블록체인에서 찾을 수 없습니다";
-"add_token.bep2_symbol_not_found" = "BEP2 기호를 찾을 수 없음";
 "add_token.input_placeholder.contract_address" = "계약 주소";
-"add_token.input_placeholder.bep2_symbol" = "BEP2 심볼";
 "add_token.input_placeholder.jetton_master_address" = "제톤 마스터 주소";
 "add_token.coin_name" = "코인 이름";
 "add_token.symbol" = "기호";
@@ -1802,11 +1857,12 @@
 "ton_connect.list.disconnect_app.description" = "Are you sure you want to disconnect from \"%@\"?";
 "ton_connect.list.disconnect_app.disconnect" = "연결 해제";
 "ton_connect.connect.url" = "URL 주소";
-"ton_connect.connect.wallet" = "Wallet";
+"ton_connect.connect.wallet" = "지갑";
 "ton_connect.connect.no_eligible_wallets" = "No eligible wallets";
 "ton_connect.connect.warning" = "승인을 눌러 이 앱이 귀하의 공공 주소를 볼 수 있도록 허용하십시오. 이것은 잠재적인 피싱 위험으로부터 데이터를 보호하기 위한 중요한 보안 단계 입니다.";
 "ton_connect.connect.connect" = "연결";
 "ton_connect.connect.reject" = "거절";
+"ton_connect.invalid_transaction" = "Invalid Transaction";
 
 // App Status
 
@@ -1829,7 +1885,7 @@
 "status_info.processing.content" = "거래는 이미 블록체인에 포함되었지만 영구적인 완결성에 도달하지 않았습니다. 이 시점에서 소액 결제를 위해 완료된 거래로 간주하는 것이 안전합니다. 더 큰 지불의 경우 거래 상태가 완료로 변경될 때까지 기다리는 것이 좋습니다.";
 "status_info.completed.title" = "완료됨";
 "status_info.confirmed.content" = "거래가 완료되고 영구적이고 되돌릴 수 없는 것으로 간주됩니다.";
-"status_info.failed.title" = "Failed";
+"status_info.failed.title" = "실패";
 "status_info.failed.content" = "거래가 처리되지 않았으며 가치 이전이 발생하지 않았습니다. 실패 원인에 따라 일부 실패한 거래는 거래 수수료를 소모할 수 있습니다. 다른 거래로 대체되거나 취소된 거래는 거래 수수료를 소비하지 않으며 실패한 것으로 표시됩니다. %@ 앱은 거래 실패의 원인을 표시할 수 없지만 사용자는 etherscan.io와 같은 공개 블록 탐색기에서 직접 찾을 수 있습니다.";
 
 // Onboarding
@@ -2069,7 +2125,7 @@
 // Activate Subscription
 
 "activate_subscription.title" = "활성화";
-"activate_subscription.wallet" = "Wallet";
+"activate_subscription.wallet" = "지갑";
 "activate_subscription.address" = "주소";
 "activate_subscription.message" = "서명할 메시지";
 "activate_subscription.sign" = "가입";
@@ -2163,3 +2219,85 @@
 "transaction_filter.all_contacts" = "모든 연락처";
 "transaction_filter.hide_suspicious_txs" = "의심스러운 거래 숨기기";
 "transaction_filter.hide_suspicious_txs.description" = "Dust 양의 안정화된 암호화폐를 사용하여 수신 거래를 숨기면 주소 독성 공격 문제의 일부를 해결할 수 있습니다.";
+
+// Purchases
+
+"premium.cell.title" = "프리미엄";
+"premium.cell.description" = "%@ 기능으로 경험을 업그레이드하세요!";
+"premium.cell.description.key" = "프리미엄";
+"premium.cell.try" = "무료로 시작하기";
+
+"purchases.title" = "프리미엄";
+"purchases.description" = "플랜 선택하기";
+"purchases.type.pro" = "프로";
+"purchases.type.vip" = "VIP";
+
+"purchases.token_insights" = "토큰 리스트";
+"purchases.token_insights.description" = "토큰 리서치 마스터";
+"purchases.token_insights.info" = "심층 분석을 위한 올인원 도구입니다. 거래량, 거래소 유동성, 보유자 행동 패턴 및 온체인 트렌드를 기반으로 엄선된 상위 250개 토큰 목록을 한눈에 살펴보세요. 필터링, 분석하고 항상 앞서 나가세요.";
+
+"purchases.advanced_search" = "고급 검색";
+"purchases.advanced_search.description" = "트렌딩 토큰 발견하기";
+"purchases.advanced_search.info" = "불필요한 정보는 배제하고 높은 잠재력을 가진 토큰을 정확하게 찾아보세요. 고급 검색을 사용하여 거래량, 블록체인, 시가총액, 가격 동향, 섹터 및 성과 등 수천 개의 토큰을 필터링하세요. 강력하고 정확하며 발견을 위해 설계되었습니다.";
+
+"purchases.trade_signals" = "트렌드 지켜보기";
+"purchases.trade_signals.description" = "더 똑똑하게 거래하고, 더 빠르게 수익 창출";
+"purchases.trade_signals.info" = "더 이상 거래 기회를 놓치지 마세요. 트렌드 지켜보기는 고급 기술 분석을 통해 실시간 알림을 제공하여 트렌드를 식별하고, 돌파 신호를 포착하며, 발생하기 전에 위험 요소를 피할 수 있도록 도와줍니다. 신속하게 행동하고, 똑똑하게 거래하며, 수익을 최대화하세요.";
+
+"purchases.tx_speed_up" = "트랜잭션 속도 향상 / 취소";
+"purchases.tx_speed_up.description" = "트랜잭션 속도 향상 및 취소";
+"purchases.tx_speed_up.info" = "트랜잭션 속도 향상 / 취소 기능은 블록체인 트랜잭션에 대한 완전한 제어를 제공합니다. 이 기능을 통해 사용자는 가스비를 증가시켜 대기 중인 트랜잭션 속도를 높이거나 필요한 경우 확인되지 않은 트랜잭션을 완전히 취소할 수 있습니다. 트랜잭션 관리에 유연성과 편의성을 더해 사용자가 자신의 활동을 항상 제어할 수 있도록 합니다.";
+
+"purchases.duress_mode" = "긴급 상황 모드";
+"purchases.duress_mode.description" = "어디서든 안전하게";
+"purchases.duress_mode.info" = "당신의 암호화폐. 당신의 보안. 긴급 상황 모드는 각각 다른 PIN을 가진 여러 개의 대체 지갑 설정을 생성할 수 있게 하여 위험한 상황에서 숨겨진 탈출 경로를 제공합니다. 지갑 잠금 해제를 강요받은 경우, 간단히 긴급 PIN을 사용하여 중요한 자산이 노출되지 않는 보조 지갑에 접근할 수 있습니다. 실제 자금은 숨겨진 채로 유지됩니다. 당신의 보안은 그대로 유지됩니다.";
+
+"purchases.address_phishing" = "사기 보호";
+"purchases.address_phishing.description" = "번거로움 없이 안전하게";
+"purchases.address_phishing.info" = "주소 하나만 잘못 입력하면 암호화폐가 영원히 사라질 수 있습니다. Unstoppable은 수신자 주소의 의심스러운 패턴을 자동으로 스캔하고 최신 피싱 위협으로부터 방어하여 해커에게 자금을 보내는 것을 방지합니다. 사기성 거래가 발생하기 전에 차단하세요.";
+
+"purchases.address_checker" = "블랙리스트 체커";
+"purchases.address_checker.description" = "합법적이고 규정을 준수하세요";
+"purchases.address_checker.info" = "위험하거나 제재 대상인 엔티티로부터 자신을 보호하세요. 블랙리스트 체커는 수신자 주소를 고위험 데이터베이스와 자동으로 대조하여 송금 전에 사기, 사기 및 제재 대상 엔티티를 표시합니다. 주소가 블랙리스트에 등록되어 있다면, 비용이 많이 드는 실수를 하기 전에 알 수 있습니다. 거래를 안전하게 하세요. 암호화폐를 깨끗하게 유지하세요. 규정을 준수하세요.";
+
+"purchases.vip_support" = "VIP 그룹";
+"purchases.vip_support.description" = "Unstoppable의 미래에 투표하세요";
+"purchases.vip_support.info" = "진화의 일부가 되세요. VIP 그룹에 가입하여 우리 팀과 직접 연결하고, 다가오는 기능에 투표하며, 향후 업데이트에 대한 독점적인 선견을 얻으세요. 당신의 의견이 중요합니다—차세대 암호화폐 지갑을 함께 만들어 나가세요.";
+
+"purchases.vip_club" = "VIP 클럽";
+"purchases.vip_club.description" = "독점 정보가 담긴 비공개 채팅";
+"purchases.vip_club.info" = "VIP 클럽은 뜻이 맞는 회원들로 구성된 프리미엄 커뮤니티에 독점 접근을 제공합니다. 회원들은 비공개 토론에 참여하고, 업계 전문가의 인사이트를 얻으며, 다른 최상위 사용자들과 네트워킹할 수 있습니다. 이 기능은 내부자 지식과 연결을 통해 앞서 나가고 싶은 분들에게 완벽합니다.";
+
+"purchases.wallet_description.title" = "높은 평가를 받는 보안, 탁월한 개인 정보 보호, 그리고 진정한 비수탁형 지갑";
+"purchases.wallet_description.approved" = "다음 기관에서 승인 및 감사:";
+
+"purchases.button.try" = "무료로 시작하기";
+"purchases.button.activated" = "활성화됨";
+"purchases.button.upgrade" = "업그레이드";
+
+"purchase.period.title" = "구독 선택";
+"purchase.period.annually" = "연간";
+"purchase.period.monthly" = "월간";
+"purchase.period.onetime" = "일회성";
+"purchase.period.onetime.description" = "평생 이용권";
+"purchase.period.save" = "절약";
+"purchase.period.year" = "년";
+"purchase.period.month" = "월";
+"purchase.period.description1" = "첫 7일은 무료로 이용하세요.";
+"purchase.period.description2" = "App Store 구독은 언제든지 취소할 수 있습니다.";
+"purchase.lifetime.description" = "제한 없이 일회성 구독을 구매할 수 있습니다";
+
+"purchases.period.button.try" = "7일 무료 체험 시작하기";
+"purchases.period.button.subscribe" = "구독하기";
+"purchases.period.button.buy" = "지금 구매하기";
+"purchases.period.button.promo" = "프로모 코드 추가";
+
+"purchases.promocode.title" = "프로모 코드 입력";
+"purchases.promocode.placeholder" = "";
+"purchases.promocode.button.invalid" = "유효하지 않은 프로모 코드";
+"purchases.promocode.button.already_used" = "이미 사용된 프로모 코드";
+
+"purchases.successful_subscription.title" = "프리미엄";
+"purchases.successful_subscription.description" = "구독해 주셔서 감사합니다!";
+"purchases.successful_subscription.subscribed" = "앱의 모든 기능을 마음껏 즐기세요.";
+"purchases.successful_subscription.button.go_app" = "앱으로 이동";

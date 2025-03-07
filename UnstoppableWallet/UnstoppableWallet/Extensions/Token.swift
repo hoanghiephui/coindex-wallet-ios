@@ -43,6 +43,7 @@ extension Token {
         case .gnosis: return true
         case .fantom: return true
         case .base: return true
+        case .zkSync: return true
         default: return false
         }
     }
@@ -57,6 +58,13 @@ extension Token {
 
     var fullBadge: String {
         (badge ?? "coin_platforms.native".localized).uppercased()
+    }
+
+    var sendToSelfAllowed: Bool {
+        if case .native = type, blockchainType == .zcash { return false }
+        if blockchainType == .tron { return false }
+
+        return true
     }
 }
 
