@@ -3156,6 +3156,8 @@
 		D3F9B0382BE3B5AA009FFA95 /* WalletConnectSendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9B0362BE3B5AA009FFA95 /* WalletConnectSendView.swift */; };
 		D3F9B03A2BE3BB36009FFA95 /* WalletConnectSendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9B0392BE3BB36009FFA95 /* WalletConnectSendViewModel.swift */; };
 		D3F9B03B2BE3BB36009FFA95 /* WalletConnectSendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9B0392BE3BB36009FFA95 /* WalletConnectSendViewModel.swift */; };
+		EC4AEF0F2D7B39B90075230A /* CollapsableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AEF0E2D7B39B90075230A /* CollapsableHeader.swift */; };
+		EC4AEF102D7B39B90075230A /* CollapsableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AEF0E2D7B39B90075230A /* CollapsableHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -4794,6 +4796,7 @@
 		D3F9B0332BE3B3A7009FFA95 /* EvmDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvmDecorator.swift; sourceTree = "<group>"; };
 		D3F9B0362BE3B5AA009FFA95 /* WalletConnectSendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectSendView.swift; sourceTree = "<group>"; };
 		D3F9B0392BE3BB36009FFA95 /* WalletConnectSendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectSendViewModel.swift; sourceTree = "<group>"; };
+		EC4AEF0E2D7B39B90075230A /* CollapsableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -5337,6 +5340,7 @@
 		11B3546A6E6F3CC013C9FF44 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				EC4AEF0E2D7B39B90075230A /* CollapsableHeader.swift */,
 				D30C4D592D560D360082B487 /* BottomSheetView.swift */,
 				D30C4D562D55FE910082B487 /* BottomSheetModifier.swift */,
 				D0A980A82B5E3C0900127AF4 /* StepChangeButtonsView.swift */,
@@ -9177,7 +9181,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1600;
-				ORGANIZATIONNAME = "Horizontal Systems";
+				ORGANIZATIONNAME = "CoinDex Wallet";
 				TargetAttributes = {
 					D38404E1218317DF007D50AD = {
 						SystemCapabilities = {
@@ -10361,6 +10365,7 @@
 				ABC9A8CBDB7CF4E781896C49 /* RestoreTypeModule.swift in Sources */,
 				ABC9A8FAB37E2049DC58FF14 /* RestoreTypeViewModel.swift in Sources */,
 				ABC9A029AFF2F178AF5AD11B /* RestoreTypeViewController.swift in Sources */,
+				EC4AEF102D7B39B90075230A /* CollapsableHeader.swift in Sources */,
 				D04DD5422B68C0EF00219B87 /* HighlightedTiltledTextView.swift in Sources */,
 				ABC9A3C13073DDFABF8C0679 /* RestoreCloudViewModel.swift in Sources */,
 				ABC9A8A74C527C4E01EBB8A5 /* RestoreCloudModule.swift in Sources */,
@@ -11850,6 +11855,7 @@
 				ABC9AA27A42D7E2A72B4A932 /* RestoreTypeModule.swift in Sources */,
 				ABC9AA0E63188150CD9A8D03 /* RestoreTypeViewModel.swift in Sources */,
 				ABC9AB401FD98F99EF6B07C6 /* RestoreTypeViewController.swift in Sources */,
+				EC4AEF0F2D7B39B90075230A /* CollapsableHeader.swift in Sources */,
 				ABC9A1EC656488FF79F458EC /* RestoreCloudViewModel.swift in Sources */,
 				ABC9A4929EFBFAD0B595A4E8 /* RestoreCloudModule.swift in Sources */,
 				ABC9AFA5222E61F7999E2A88 /* RestoreCloudService.swift in Sources */,

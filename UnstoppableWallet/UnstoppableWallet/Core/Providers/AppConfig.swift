@@ -3,18 +3,18 @@ import MarketKit
 import UIKit
 
 enum AppConfig {
-    static let label = "io.horizontalsystems.unstoppable"
+    static let label = "money.coindex.wallet"
     static let backupSalt = "unstoppable"
 
-    static let companyName = "Horizontal Systems"
+    static let companyName = "CoinDex"
     static let reportEmail = "support.unstoppable@protonmail.com"
-    static let companyWebPageLink = "https://horizontalsystems.io"
-    static let appWebPageLink = "https://unstoppable.money"
-    static let analyticsLink = "https://unstoppable.money/analytics"
-    static let appGitHubAccount = "horizontalsystems"
-    static let appGitHubRepository = "unstoppable-wallet-ios"
-    static let appTwitterAccount = "unstoppablebyhs"
-    static let appTelegramAccount = "unstoppable_announcements"
+    static let companyWebPageLink = "https://coindex.money"
+    static let appWebPageLink = "https://coindex.money"
+    static let analyticsLink = "https://coindex.money/analytics"
+    static let appGitHubAccount = "hoanghiephui"
+    static let appGitHubRepository = "coindex-wallet-ios"
+    static let appTwitterAccount = "CoinDex68"
+    static let appTelegramAccount = "coindex68"
     static let appTokenTelegramAccount = "BeUnstoppable_bot"
     static let mempoolSpaceUrl = "https://mempool.space"
     static let guidesIndexUrl = URL(string: "https://raw.githubusercontent.com/horizontalsystems/blockchain-crypto-guides/v1.2/index.json")!
