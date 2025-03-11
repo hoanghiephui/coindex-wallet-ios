@@ -107,6 +107,21 @@ extension MarketSectorsViewModel {
 
         sync()
     }
+    
+    func loadTop() {
+        sortBy = .highestCap
+        currencyManager.$baseCurrency
+            .sink { [weak self] _ in
+                self?.sync()
+            }
+            .store(in: &cancellables)
+
+        appManager.willEnterForegroundPublisher
+            .sink { [weak self] in self?.sync() }
+            .store(in: &cancellables)
+
+        sync()
+    }
 
     func refresh() async {
         await _sync()

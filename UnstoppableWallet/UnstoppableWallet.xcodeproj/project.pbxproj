@@ -3158,6 +3158,8 @@
 		D3F9B03B2BE3BB36009FFA95 /* WalletConnectSendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9B0392BE3BB36009FFA95 /* WalletConnectSendViewModel.swift */; };
 		EC4AEF0F2D7B39B90075230A /* CollapsableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AEF0E2D7B39B90075230A /* CollapsableHeader.swift */; };
 		EC4AEF102D7B39B90075230A /* CollapsableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AEF0E2D7B39B90075230A /* CollapsableHeader.swift */; };
+		EC7E19AB2D80752100E731C5 /* MainSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E19AA2D80752100E731C5 /* MainSearchView.swift */; };
+		EC7E19AC2D80752100E731C5 /* MainSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E19AA2D80752100E731C5 /* MainSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -4797,6 +4799,7 @@
 		D3F9B0362BE3B5AA009FFA95 /* WalletConnectSendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectSendView.swift; sourceTree = "<group>"; };
 		D3F9B0392BE3BB36009FFA95 /* WalletConnectSendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectSendViewModel.swift; sourceTree = "<group>"; };
 		EC4AEF0E2D7B39B90075230A /* CollapsableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableHeader.swift; sourceTree = "<group>"; };
+		EC7E19AA2D80752100E731C5 /* MainSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -5536,81 +5539,82 @@
 		11B354AB3C3435F2D5F39EE6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				D30C4D462D3A2AF20082B487 /* SendAddress */,
+				EC7E19A92D8074F700E731C5 /* MainSearch */,
+				11B35AF9DE290038ED37E99F /* ActivateSubscription */,
 				D30C4D3F2D392FBF0082B487 /* Address */,
-				D3A12E982CC8C6CE008D5F99 /* Education */,
-				D362879D2CA2B32900ADAF3B /* TonConnect */,
-				D3E1E8722C21856000E07052 /* Purchases */,
-				D311DA1A2BCD28C10013DB8F /* SendNew */,
-				11B35344CEA8CF35257A6975 /* Launch */,
-				11B35597F6C8570E3C7ABFBF /* Main */,
-				11B355696B08867B698F84CD /* Wallet */,
-				11B358D87B2EDEB8BE8F133B /* Settings */,
-				D0F7675026BA8E2900093AFF /* Transactions */,
-				2FA5D3D74F4E4BFA79E729B2 /* TransactionInfo */,
-				3C7B9BF3170D4C25D5293D33 /* Welcome */,
-				58AAAB6A314C9C062F5707AB /* Debug */,
-				1A564DFE0406B2AFCA4CAEC9 /* AppStatus */,
-				58AAAB709D0435465FC5BD99 /* DoubleSpendInfo */,
-				11B355234843FBD9FE46C9BC /* BottomSelector */,
-				11B353FE7C7506B6FFE4A1AE /* Alert */,
-				1A5643FB455E8D8D220E775E /* BalanceError */,
-				11B35175C31870C69B4E2510 /* Markdown */,
-				1A564853E1CD86F12B83F79E /* ScanQr */,
 				11B351816FACBB33F9100BFE /* AddToken */,
-				58AAA1A28E8F61C815C86131 /* Info */,
-				58AAA091D0ECCDE78596CD77 /* CoinSelect */,
-				58AAAA79207F87EB221F5381 /* SwapApprove */,
-				11B351AAA560798455BC2E48 /* WalletConnect */,
-				11B35573D5B370354AD94937 /* Faq */,
-				58AAA9EB9618EBC895D0B123 /* Market */,
-				11B350F4F8AA86BB84CF5CF2 /* SendEvmTransaction */,
-				11B35D070AAF3E6A8ED8EC83 /* SendEvm */,
-				D07157D72A2DD7A8006F141F /* SendTron */,
-				58AAAC89F3E7CD9F799B89D7 /* Coin */,
-				11B3581D97669C8038485FAE /* CreateAccount */,
-				11B35FEAD9772F1E11F3D767 /* RestoreAccount */,
-				D01517EC2B10A66000FECCBC /* Watch */,
-				11B356E7705CB0B09907CAE5 /* ManageAccounts */,
-				11B35D872FF3A1F48337BD33 /* ManageAccount */,
+				11B353FE7C7506B6FFE4A1AE /* Alert */,
+				1A564DFE0406B2AFCA4CAEC9 /* AppStatus */,
 				11B359F416D32B9A66DE6C50 /* Backup */,
 				11B350A2E7EE706CB00F6E34 /* BackupVerifyWords */,
-				11B3579127F81BF69246DB8F /* ManageWallets */,
-				11B35A52DF53F381A5B84BD4 /* RestoreSettings */,
-				11B3592A7B1E091728CA81B4 /* BirthdayInput */,
-				58AAAF31DFE7985A05D0FD64 /* MetricChart */,
-				11B354A8CDEDDE93B3C354FE /* EvmNetwork */,
-				58AAA1C57EF90D7B94C6ED2D /* Swap */,
-				58AAA1EF2C6D61338F6DF12E /* SwapSettings */,
-				58AAA8CDAF16B76AE70B0DD2 /* SwapSelectProvider */,
-				11B3549443942FD0F179C73D /* SwitchAccount */,
-				58AAA3C250248F52467618E4 /* SwapConfirmation */,
-				2FA5DBA9D9D10710F13F8833 /* EvmSendSettings */,
-				11B35341E8FB8557D3C8E4B5 /* NftAsset */,
-				11B35FAEDD46AFFF98B3E7AD /* BtcBlockchainSettings */,
-				ABC9A4FE6BE86F9163319A4A /* Send */,
-				11B353F19C7361EF351410B1 /* NftCollection */,
-				ABC9A26152EE25693E68B922 /* ProFeatures */,
-				ABC9AF512A4FB3EC0EA223DE /* Chart */,
-				1A5646EF1FF04ABE198C069D /* Placeholder */,
-				11B35BDC053E5406102E789C /* RecoveryPhrase */,
-				11B35745D51E5D3A714BA5A4 /* EvmPrivateKey */,
-				11B359C7777CEA0D86D6E10C /* ExtendedKey */,
-				11B358D277F396F433C4EE48 /* Nft */,
-				ABC9A36EA08B74D3591F571E /* BottomSheet */,
-				ABC9AC795DC3FDA1CBEECA52 /* SendNft */,
-				ABC9A1BEFAB2EACDD6ACD361 /* SwapNew */,
-				ABC9A046B09882B70A6D61A1 /* ContactBook */,
-				11B35AF9DE290038ED37E99F /* ActivateSubscription */,
-				11B3556BA504CF21608B0958 /* SubscriptionInfo */,
-				11B35FF3B50575193B455B17 /* Cex */,
+				1A5643FB455E8D8D220E775E /* BalanceError */,
 				11B35B00CE3E5752412A35AF /* Binance */,
+				11B3592A7B1E091728CA81B4 /* BirthdayInput */,
 				11B35789C06F06FFAB1F4D6A /* BlockchainTokens */,
-				11B356791A9FB33F6AF7409E /* Passcode */,
+				11B355234843FBD9FE46C9BC /* BottomSelector */,
+				ABC9A36EA08B74D3591F571E /* BottomSheet */,
+				11B35FAEDD46AFFF98B3E7AD /* BtcBlockchainSettings */,
+				11B35FF3B50575193B455B17 /* Cex */,
+				ABC9AF512A4FB3EC0EA223DE /* Chart */,
+				58AAAC89F3E7CD9F799B89D7 /* Coin */,
+				58AAA091D0ECCDE78596CD77 /* CoinSelect */,
+				ABC9A046B09882B70A6D61A1 /* ContactBook */,
+				11B3581D97669C8038485FAE /* CreateAccount */,
+				58AAAB6A314C9C062F5707AB /* Debug */,
+				58AAAB709D0435465FC5BD99 /* DoubleSpendInfo */,
+				D3A12E982CC8C6CE008D5F99 /* Education */,
+				11B354A8CDEDDE93B3C354FE /* EvmNetwork */,
+				11B35745D51E5D3A714BA5A4 /* EvmPrivateKey */,
+				2FA5DBA9D9D10710F13F8833 /* EvmSendSettings */,
+				11B359C7777CEA0D86D6E10C /* ExtendedKey */,
+				11B35573D5B370354AD94937 /* Faq */,
+				58AAA1A28E8F61C815C86131 /* Info */,
 				11B35749CD58027ED50DABFF /* LanguageSettings */,
-				11B35E2F913B2546A041D0AE /* NoPasscode */,
+				11B35344CEA8CF35257A6975 /* Launch */,
+				11B35597F6C8570E3C7ABFBF /* Main */,
+				11B35D872FF3A1F48337BD33 /* ManageAccount */,
+				11B356E7705CB0B09907CAE5 /* ManageAccounts */,
+				11B3579127F81BF69246DB8F /* ManageWallets */,
+				11B35175C31870C69B4E2510 /* Markdown */,
+				58AAA9EB9618EBC895D0B123 /* Market */,
+				58AAAF31DFE7985A05D0FD64 /* MetricChart */,
 				11B35B779976BD7D47FFD40C /* MultiSwap */,
+				11B358D277F396F433C4EE48 /* Nft */,
+				11B35341E8FB8557D3C8E4B5 /* NftAsset */,
+				11B353F19C7361EF351410B1 /* NftCollection */,
+				11B35E2F913B2546A041D0AE /* NoPasscode */,
+				11B356791A9FB33F6AF7409E /* Passcode */,
+				1A5646EF1FF04ABE198C069D /* Placeholder */,
+				ABC9A26152EE25693E68B922 /* ProFeatures */,
+				D3E1E8722C21856000E07052 /* Purchases */,
+				11B35BDC053E5406102E789C /* RecoveryPhrase */,
 				D0118E462B7C99F700D55CE6 /* ResendBitcoin */,
+				11B35FEAD9772F1E11F3D767 /* RestoreAccount */,
+				11B35A52DF53F381A5B84BD4 /* RestoreSettings */,
+				1A564853E1CD86F12B83F79E /* ScanQr */,
+				ABC9A4FE6BE86F9163319A4A /* Send */,
+				D30C4D462D3A2AF20082B487 /* SendAddress */,
+				11B35D070AAF3E6A8ED8EC83 /* SendEvm */,
+				11B350F4F8AA86BB84CF5CF2 /* SendEvmTransaction */,
+				D311DA1A2BCD28C10013DB8F /* SendNew */,
+				ABC9AC795DC3FDA1CBEECA52 /* SendNft */,
+				D07157D72A2DD7A8006F141F /* SendTron */,
+				11B358D87B2EDEB8BE8F133B /* Settings */,
+				11B3556BA504CF21608B0958 /* SubscriptionInfo */,
+				58AAA1C57EF90D7B94C6ED2D /* Swap */,
+				58AAAA79207F87EB221F5381 /* SwapApprove */,
+				58AAA3C250248F52467618E4 /* SwapConfirmation */,
+				ABC9A1BEFAB2EACDD6ACD361 /* SwapNew */,
+				58AAA8CDAF16B76AE70B0DD2 /* SwapSelectProvider */,
+				58AAA1EF2C6D61338F6DF12E /* SwapSettings */,
+				11B3549443942FD0F179C73D /* SwitchAccount */,
+				D362879D2CA2B32900ADAF3B /* TonConnect */,
+				2FA5D3D74F4E4BFA79E729B2 /* TransactionInfo */,
+				D0F7675026BA8E2900093AFF /* Transactions */,
+				11B355696B08867B698F84CD /* Wallet */,
+				11B351AAA560798455BC2E48 /* WalletConnect */,
+				D01517EC2B10A66000FECCBC /* Watch */,
+				3C7B9BF3170D4C25D5293D33 /* Welcome */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -8965,6 +8969,14 @@
 			path = Tab;
 			sourceTree = "<group>";
 		};
+		EC7E19A92D8074F700E731C5 /* MainSearch */ = {
+			isa = PBXGroup;
+			children = (
+				EC7E19AA2D80752100E731C5 /* MainSearchView.swift */,
+			);
+			path = MainSearch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -10282,6 +10294,7 @@
 				11B35197E2FD1BD9E533E967 /* BottomSheetViewController.swift in Sources */,
 				2FA5D20BC28280786A0FC3FE /* DropDownListCell.swift in Sources */,
 				D3C845AA2C1B08E3004F9DD9 /* CoinMajorHoldersViewModel.swift in Sources */,
+				EC7E19AC2D80752100E731C5 /* MainSearchView.swift in Sources */,
 				2FA5D707CD9B268FA3CA8D8F /* TimeLockViewModel.swift in Sources */,
 				2FA5D06916F84E180B2AF357 /* InputOutputOrderService.swift in Sources */,
 				2FA5DBD4F56DCAE4CDCAAB61 /* InputOutputOrderDataSource.swift in Sources */,
@@ -11772,6 +11785,7 @@
 				11B35E99E0D2A095857DDE13 /* BottomSheetViewController.swift in Sources */,
 				2FA5D10D571F6D9E3BECAF9E /* DropDownListCell.swift in Sources */,
 				D3C845A92C1B08E3004F9DD9 /* CoinMajorHoldersViewModel.swift in Sources */,
+				EC7E19AB2D80752100E731C5 /* MainSearchView.swift in Sources */,
 				2FA5D62A6A421EEDFE784615 /* TimeLockViewModel.swift in Sources */,
 				2FA5DDD1C1B4F6A483D9F089 /* InputOutputOrderService.swift in Sources */,
 				2FA5D715FCD64E7FD500BC27 /* InputOutputOrderDataSource.swift in Sources */,

@@ -13,6 +13,16 @@ class MainViewController: ThemeTabBarController {
     private let balanceModule = ThemeNavigationController(rootViewController: WalletModule.viewController())
     private let transactionsModule = ThemeNavigationController(rootViewController: TransactionsModule.viewController())
     private let settingsModule = ThemeNavigationController(rootViewController: MainSettingsModule.viewController())
+    private let mainSearchModule: UIViewController = {
+            let searchView = MainSearchView()
+            let controller = searchView.toNavigationViewController()
+            controller.tabBarItem = UITabBarItem(
+                title: "placeholder.search".localized,
+                image: UIImage(named: "search_discovery_24"),
+                tag: 1
+            )
+            return controller
+        }()
 
     private var showAlerts = [() -> Void]()
 
@@ -96,6 +106,7 @@ class MainViewController: ThemeTabBarController {
         viewControllers.append(contentsOf: [
             balanceModule,
             transactionsModule,
+            mainSearchModule,
             settingsModule,
         ])
 
